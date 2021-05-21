@@ -1,3 +1,10 @@
+$(document).ready(function () {
+    $('#nav-icon2').click(function (event) {
+        $('#nav-icon2,.left-block').toggleClass('open');
+        $('body').toggleClass('lock');
+    });
+});
+
 //select
 for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
     dropdown.addEventListener('click', function () {
@@ -52,3 +59,8 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 }
+
+//tabs
+
+
+

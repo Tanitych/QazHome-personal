@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #e5e5e5" id="srollTop">
+    <div id="nav-icon2" class="nav-icon2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <a
+      class="scrollTop"
+      href="#srollTop"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <img src="img/scroll-top-icon.svg" alt="" />
+    </a>
+    <main>
+      <div class="left-block">
+        <div class="logo-burger">
+          <a href="" class="sidebar-logo"><img src="img/logo.svg" alt="" /> </a>
+        </div>
+        <aside class="left-sidebar">
+          <div class="sidebar-nav">
+            <p class="small-cap">Личный кабинет</p>
+            <div class="profile-img-text">
+              <img class="profile-img" src="img/avatar.jpg" alt="" />
+              <div class="profile-text">
+                <p class="name">Алибек Маратов</p>
+                <p class="id">ID928312934</p>
+              </div>
+            </div>
+            <div class="label">
+              <img
+                class="label-img"
+                src="img/user-profile-checkmark.svg"
+                alt=""
+              />
+              <p class="label-name">Пайщик</p>
+            </div>
+            <div class="scroll-level">
+              <div class="scroll-level-text">
+                <img src="img/home-task-list.svg" alt="" />
+                <p class="queue">В очереди</p>
+                <p class="amount">
+                  <img class="elipse-icon" src="img/Ellipse 1.svg" alt="" />61
+                </p>
+              </div>
+              <div class="scroll-level-item">
+                <div class="scroll-level-line" style="width: 50%"></div>
+              </div>
+            </div>
+            <ul class="navigation-bar">
+              <li>
+                <a href="" class="navigation-link">
+                  <img
+                    class="navigation-img"
+                    src="img/icons/analytics.svg"
+                    alt=""
+                  />
+                  Программа</a
+                >
+              </li>
+              <li>
+                <a href="" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/users.svg"
+                    alt=""
+                  />
+                  Очередь</a
+                >
+              </li>
+              <li>
+                <a href="" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/notification.svg"
+                    alt=""
+                  />
+                  Уведомления
+                  <p class="noty">3</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/logout.svg"
+                    alt=""
+                  />
+                  Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="main-wrapper">
+        <div class="content-wrapper">
+          <!-- @import "header.html" -->
+          <div class="schedule-block">
+            <h4 class="schedule-block-title">График платежей</h4>
+            <div class="tabs">
+              <div class="tabs__nav">
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_1">
+                  Календарь
+                </button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_2">
+                  История платежей
+                </button>
+              </div>
+              <div class="tabs__content">
+                <div class="tabs__item" id="tab_1">
+                  <div class="subtabs">
+                    <div class="subtabs__nav">
+                      <button
+                        class="subtabs-nav-btn"
+                        type="button"
+                        data-subtab="#subtab_1"
+                      >
+                        2020
+                      </button>
+                      <button
+                        class="subtabs-nav-btn"
+                        type="button"
+                        data-subtab="#subtab_2"
+                      >
+                        2021
+                      </button>
+                      <button
+                        class="subtabs-nav-btn"
+                        type="button"
+                        data-subtab="#subtab_3"
+                      >
+                        2022
+                      </button>
+                    </div>
+                    <div class="subtabs__content">
+                      <div class="subtabs__item" id="subtab_1">1</div>
+                      <div class="subtabs__item" id="subtab_2">
+                        <div class="schedule-container">
+                          <form action="" class="confirmed-block">
+                            <p class="head-text">13 января</p>
+                            <div class="checked-img">
+                              <img src="img/check2.svg" alt="" />
+                            </div>
+                            <p class="confirmed-text">Оплачено 103 000₸</p>
+                          </form>
+                          <form action="" class="confirmed-block">
+                            <p class="head-text">13 февраля</p>
+                            <div class="checked-img">
+                              <img src="img/check2.svg" alt="" />
+                            </div>
+                            <p class="confirmed-text">Оплачено 103 000₸</p>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 марта</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 апреля</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 мая</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 июня</p>
+                            <p class="light-cap error">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input error"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 июля</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 августа</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 сентября</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 октября</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 ноября</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                          <form action="" class="schedule-item">
+                            <p class="head-text">13 декабря</p>
+                            <p class="light-cap">Мин. взнос 75 000₸</p>
+                            <input
+                              class="payment-input"
+                              type="number"
+                              placeholder="Введите сумму"
+                              required
+                            />
+                            <button class="schedule-btn">Оплатить</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__item" id="tab_2">
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. The point of using Lorem Ipsum is that it has a
+                    more-or-less normal distribution of letters, as opposed to
+                    using 'Content here, content here', making it look like
+                    readable English.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/tabs-script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
