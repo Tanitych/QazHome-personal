@@ -856,7 +856,7 @@ input:checked + .slider:before {
   width: 36px;
   height: 27px;
   position: relative;
-  margin: 0px 0px 0px 25px;
+  margin: 15px 0px 0px 25px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -965,8 +965,28 @@ header {
   padding: 30px 0px 30px 0px;
   width: 100%;
   max-width: 641px;
+  @media (max-width: 768px) {
+    padding: 20px 0px 15px 0px;
+  }
 }
 .header-body {
+  overflow-x: auto;
+  padding: 0px 0px 15px 0px;
+  scrollbar-color: var(--blue) #f4f0eb; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+  &::-webkit-scrollbar {
+    width: 7px; /* ширина для вертикального скролла */
+    height: 3px; /* высота для горизонтального скролла */
+    background-color: #f4f0eb;
+  }
+  /* ползунок скроллбара */
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 6px;
+    &:hover {
+      background-color: var(--blue-hov);
+    }
+  }
   ul {
     display: flex;
     align-items: center;
@@ -977,6 +997,8 @@ header {
         line-height: 100%;
         color: #888888;
         transition: all ease 0.3s;
+        white-space: nowrap;
+        margin: 0px 20px 0px 0px;
         &:hover {
           color: #474747;
         }
@@ -986,8 +1008,7 @@ header {
 }
 .main-wrapper {
   width: 100%;
-
-  padding: 0px 15px 0px 265px;
+  padding: 0px 15px 40px 265px;
   @media (max-width: 768px) {
     padding: 0px 10px 0px 10px;
   }
@@ -1002,11 +1023,15 @@ header {
   line-height: 100%;
   color: #888888;
   padding: 0px 30px 0px 30px;
+  @media (max-width: 991px) {
+    padding: 0px 15px;
+  }
 }
 .schedule-block {
   padding: 30px 0px;
   background-color: var(--white);
   border-radius: 12px;
+  margin: 0px 0px 20px 0px;
 }
 .tabs {
 }
@@ -1014,6 +1039,9 @@ header {
 .tabs__nav {
   display: flex;
   padding: 18px 30px 20px 30px;
+  @media (max-width: 991px) {
+    padding: 18px 15px 20px 15px;
+  }
 }
 
 .tabs__nav-btn {
@@ -1074,7 +1102,7 @@ header {
   scrollbar-width: thin; /* толщина */
   &::-webkit-scrollbar {
     width: 4px; /* ширина для вертикального скролла */
-    height: 5px; /* высота для горизонтального скролла */
+    height: 4px; /* высота для горизонтального скролла */
     background-color: #f4f0eb;
   }
   /* ползунок скроллбара */
@@ -1085,11 +1113,14 @@ header {
       background-color: var(--blue-hov);
     }
   }
+  @media (max-width: 991px) {
+    padding: 13px 15px;
+  }
 }
 .subtabs-nav-btn {
   background-color: var(--white);
   padding: 0px 5px 0px 5px;
-  margin: 0px 5px 0px 5px;
+  margin: 0px 30px 0px 0px;
   font-size: 18px;
   line-height: 100%;
   color: #888888;
@@ -1109,6 +1140,9 @@ header {
   &:hover {
     color: var(--sea-blue);
   }
+  @media (max-width: 991px) {
+    margin: 0px 20px 0px 0px;
+  }
 }
 .subtabs-nav-btn.active {
   color: var(--sea-blue);
@@ -1125,18 +1159,32 @@ header {
 }
 .subtabs__content {
   padding: 20px 20px;
+  @media (max-width: 991px) {
+    padding: 20px 15px;
+  }
 }
 .schedule-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  @media (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 }
 .schedule-item {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white);
   border-radius: 12px;
   padding: 20px 20px;
+  @media (max-width: 991px) {
+    padding: 15px 15px;
+  }
   .head-text {
     font-weight: 300;
     font-size: 24px;
@@ -1222,4 +1270,11 @@ header {
     line-height: 100%;
     color: var(--white);
   }
+}
+
+.scroll-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 0px 10px;
 }
