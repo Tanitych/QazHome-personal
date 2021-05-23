@@ -23,7 +23,7 @@ function onTabClick(item) {
         }
     });
 }
-document.querySelector(".tabs__nav-btn").click();
+document.querySelector(".tabs__nav-btn:nth-child(2)").click();
 
 //tabs2
 
