@@ -5,6 +5,13 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $('.search-btn').click(function () {
+        $('.search-input').toggleClass('appear')
+    })
+})
+
+
 //select
 for (const dropdown of document.querySelectorAll(".custom-select-wrapper")) {
     dropdown.addEventListener('click', function () {
