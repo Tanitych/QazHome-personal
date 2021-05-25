@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="img/header-img/icons/favicon.png" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #e5e5e5" id="srollTop">
+    <header>
+  <div class="header-body">
+    <ul>
+      <li>
+        <a href="" class="header-link">О компании</a>
+      </li>
+      <li>
+        <a href="" class="header-link">Новости</a>
+      </li>
+      <li>
+        <a href="" class="header-link">Отзывы</a>
+      </li>
+      <li>
+        <a href="" class="header-link">Онлайн голосование</a>
+      </li>
+      <li>
+        <a href="" class="header-link">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+    <div id="form-modal" class="modal-block">
+      <form class="modal-form" action="">
+        <div class="modal-form-head">
+          <h4 class="modal-form-title">Подтверждение перед оплатой</h4>
+          <div class="modal-close">
+            <img src="img/x-burger.svg" alt="" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <a
+      class="scrollTop"
+      href="#srollTop"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <img src="img/scroll-top-icon.svg" alt="" />
+    </a>
+    <div class="programs">
+      <div class="content">
+        <a href="payment-schedule.html" class="logo"
+          ><img src="img/logo.svg" alt="" />
+        </a>
+        <h3 class="program-title">
+          Для завершения регистрации выберите программу
+        </h3>
+        <div class="programs_body">
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">Максат</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <div id="modal-btn" class="choose_btn">Выбрать</div>
+            </div>
+          </form>
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">Куаныш 30%-49%</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <div class="middle">
+                <input required type="text" placeholder="Введите ID" />
+                <button class="apply_btn">Применить</button>
+              </div>
+              <button class="choose_btn">Выбрать</button>
+            </div>
+          </form>
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">Бакыт 50%-80%</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <div class="middle">
+                <input disabled required type="text" placeholder="812391294" />
+                <button class="on_check">На проверке</button>
+              </div>
+              <button class="choose_btn">Выбрать</button>
+            </div>
+          </form>
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">Накопительная</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <!-- <div class="middle">
+                <input required type="text" placeholder="Введите ID" />
+                <button class="apply_btn">Применить</button>
+              </div> -->
+              <button class="choose_btn">Выбрать</button>
+            </div>
+          </form>
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">QazAuto</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <!-- <div class="middle">
+                <input required type="text" placeholder="Введите ID" />
+                <button class="apply_btn">Применить</button>
+              </div> -->
+              <button class="choose_btn">Выбрать</button>
+            </div>
+          </form>
+          <form action="" class="programs_item">
+            <div class="head">
+              <div class="title-amount">
+                <h4 class="title">Тулпар</h4>
+                <p class="amount">0% в год</p>
+              </div>
+              <div class="custom-select-wrapper">
+                <div class="custom-select">
+                  <div class="custom-select__trigger">
+                    <span>5 000 000₸</span>
+                    <div class="arrow"></div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="tesla"
+                      >6 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="volvo"
+                      >7 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >8 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >2 000 000₸</span
+                    >
+                    <span class="custom-option" data-value="mercedes"
+                      >1 000 000₸</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <table class="delivery">
+                <thead>
+                  <tr>
+                    <th><p class="th-text">Паевой взнос</p></th>
+                    <th><p class="th-text">Ожидание</p></th>
+                    <th><p class="th-text">Срок рассрочки</p></th>
+                    <th><p class="th-text">Членский взнос</p></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td aria-label="Паевой взнос">
+                      <p class="td-text">75 000₸ х 16 мес</p>
+                    </td>
+                    <td aria-label="Ожидание">
+                      <p class="td-text">в порядке очереди</p>
+                    </td>
+                    <td aria-label="Срок рассрочки">
+                      <p class="td-text">
+                        84 мес <span class="span">/ до 7 лет</span>
+                      </p>
+                    </td>
+                    <td aria-label="Членский взнос">
+                      <p class="td-text">
+                        5 000₸ мес <span class="span"> / после засел.</span>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note">
+              <div class="perceint-text">
+                <p class="perceint">5%</p>
+                <p class="text">Вступительный взнос 500 000₸</p>
+              </div>
+
+              <div class="que">
+                <img src="img/queue-icon.svg" alt="" />
+                <p class="text">
+                  Когда подходит ваша очередь вы вносите 800 000₸
+                </p>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="left">
+                <label class="switch">
+                  <input type="checkbox" />
+                  <span class="slider round"></span>
+                </label>
+                <p class="text">Я партнер</p>
+                <img src="img/inlove (1).svg" alt="" />
+                <p class="perceint">3%</p>
+              </div>
+              <!-- <div class="middle">
+                <input required type="text" placeholder="Введите ID" />
+                <button class="apply_btn">Применить</button>
+              </div> -->
+              <button class="choose_btn">Выбрать</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <lottie-player
+      src="https://assets4.lottiefiles.com/packages/lf20_ltbqacam.json"
+      background="transparent"
+      speed="1"
+      style="width: 300px; height: 300px"
+      loop
+      autoplay
+    ></lottie-player>
+    
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

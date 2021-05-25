@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="shortcut icon" href="img/logo.svg" />
+    <link rel="stylesheet" href="lips/fontawesome/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/main-alpha.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #e5e5e5" id="srollTop">
+    <div class="buger-logo">
+      <a href="" class="sidebar-logo"><img src="img/logo.svg" alt="" /> </a>
+      <div id="nav-icon2" class="nav-icon2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <a
+      class="scrollTop"
+      href="#srollTop"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <img src="img/scroll-top-icon.svg" alt="" />
+    </a>
+    <main>
+      <div class="left-block">
+        <div class="logo-burger">
+          <a href="" class="sidebar-logo"><img src="img/logo.svg" alt="" /> </a>
+        </div>
+        <aside class="left-sidebar">
+          <div class="sidebar-nav">
+            <p class="small-cap">Личный кабинет</p>
+            <div class="profile-img-text">
+              <img class="profile-img" src="img/avatar.jpg" alt="" />
+              <div class="profile-text">
+                <p class="name">Алибек Маратов</p>
+                <p class="id">ID928312934</p>
+              </div>
+            </div>
+            <div class="label">
+              <img
+                class="label-img"
+                src="img/user-profile-checkmark.svg"
+                alt=""
+              />
+              <p class="label-name">Пайщик</p>
+            </div>
+            <div class="scroll-level">
+              <div class="scroll-level-text">
+                <img src="img/icons/home.svg" alt="" />
+                <p class="queue got">Дом получен</p>
+              </div>
+              <div class="scroll-level-item">
+                <div class="scroll-level-line got" style="width: 100%"></div>
+              </div>
+            </div>
+            <ul class="navigation-bar">
+              <li>
+                <a href="" class="navigation-link">
+                  <img
+                    class="navigation-img"
+                    src="img/icons/analytics.svg"
+                    alt=""
+                  />
+                  Программа</a
+                >
+              </li>
+              <li>
+                <a href="" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/users.svg"
+                    alt=""
+                  />
+                  Очередь</a
+                >
+              </li>
+              <li>
+                <a href="" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/notification.svg"
+                    alt=""
+                  />
+                  Уведомления
+                  <p class="noty">3</p>
+                </a>
+              </li>
+              <li>
+                <a href="form-registration.html" class="navigation-link"
+                  ><img
+                    class="navigation-img"
+                    src="img/icons/logout.svg"
+                    alt=""
+                  />
+                  Выйти</a
+                >
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="main-wrapper">
+        <div class="content-wrapper">
+          <!-- @import "header.html" -->
+          <div class="my-datas">
+            <form action="" class="my-datas-form">
+              <div class="form-head">
+                <h3 class="my-datas-title">Мои данные</h3>
+                <div class="x-burger">
+                  <img src="img/icons/x-burger.svg" alt="" />
+                </div>
+              </div>
+              <div class="form-body">
+                <div class="double-input">
+                  <div class="floating">
+                    <input
+                      required
+                      id="input__username"
+                      class="floating__input"
+                      name="username"
+                      type="text"
+                      placeholder="ФИО"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="ФИО"
+                    >
+                      <span class="hidden--visually">ФИО</span></label
+                    >
+                  </div>
+                  <div class="floating">
+                    <input
+                      required
+                      id="input__username"
+                      class="floating__input"
+                      name="username"
+                      type="number"
+                      placeholder="ИИН"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="ИИН"
+                    >
+                      <span class="hidden--visually">ИИН</span></label
+                    >
+                  </div>
+                </div>
+                <div class="floating">
+                  <input
+                    required
+                    id="input__username"
+                    class="floating__input"
+                    name="username"
+                    type="text"
+                    placeholder="Адрес"
+                  />
+                  <label
+                    for="input__username"
+                    class="floating__label"
+                    data-content="Адрес"
+                  >
+                    <span class="hidden--visually">Адрес</span></label
+                  >
+                </div>
+                <div class="triple-input">
+                  <div class="module_data_input">
+                    <div class="inner_box">
+                      <div class="title">Дата рождения</div>
+                      <input
+                        readonly
+                        type="text"
+                        value="9 Апреля 1949"
+                        class="datepicker-here"
+                        data-date-format="d MM yyyy"
+                        required
+                      />
+                    </div>
+                    <div class="arrow">
+                      <img src="img/arrow_input.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="floating">
+                    <input
+                      required
+                      id="phone"
+                      class="floating__input"
+                      name="username"
+                      type="tel"
+                      placeholder="Телефон"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="Телефон"
+                    >
+                      <span class="hidden--visually">Телефон</span></label
+                    >
+                  </div>
+                  <div class="floating">
+                    <input
+                      required
+                      id="input__username"
+                      class="floating__input"
+                      name="E-mail"
+                      type="email"
+                      placeholder="ФИО"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="E-mail"
+                    >
+                      <span class="hidden--visually">E-mail</span></label
+                    >
+                  </div>
+                </div>
+                <div class="floating">
+                  <input
+                    required
+                    id="input__username"
+                    class="floating__input"
+                    name="username"
+                    type="text"
+                    placeholder="Программа"
+                  />
+                  <label
+                    for="input__username"
+                    class="floating__label"
+                    data-content="Программа"
+                  >
+                    <span class="hidden--visually">Программа</span></label
+                  >
+                </div>
+                <div class="double-input">
+                  <div class="floating">
+                    <input
+                      required
+                      class="floating__input"
+                      placeholder="Новый пароль"
+                      type="password"
+                      name="password"
+                      id="password"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="Новый пароль"
+                    >
+                      <span class="hidden--visually">Новый пароль</span></label
+                    >
+                    <div
+                      class="toggle-password-icon"
+                      id="toggle-password"
+                      onclick="return show_password(this);"
+                    >
+                      <img src="img/icons/toggle-password-icon.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="floating">
+                    <input
+                      required
+                      class="floating__input"
+                      placeholder="Повторите новый пароль"
+                      type="password"
+                      name="password"
+                      id="password2"
+                    />
+                    <label
+                      for="input__username"
+                      class="floating__label"
+                      data-content="Повторите новый пароль"
+                    >
+                      <span class="hidden--visually"
+                        >Повторите новый пароль</span
+                      ></label
+                    >
+                    <div
+                      class="toggle-password-icon"
+                      id="toggle-password"
+                      onclick="return show_password2(this);"
+                    >
+                      <img src="img/icons/toggle-password-icon.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="sing-up-btn">Сохранить</button>
+            </form>
+            <div class="my-datas-form">
+              <div class="form-head">
+                <h3 class="my-datas-title">Мои данные</h3>
+
+                <div class="x-burger edit-btn">
+                  <img src="img/icons/edit.svg" alt="" />
+                </div>
+              </div>
+              <h3 class="personal-name">Алибек Маратов</h3>
+              <div class="form-body ready">
+                <div class="triple-input border-item">
+                  <div class="date-info-item">
+                    <span class="label">ИИН</span>
+                    <p class="data-text-info">920312392213</p>
+                  </div>
+                  <div class="date-info-item">
+                    <span class="label">ID</span>
+                    <p class="data-text-info">920312392213</p>
+                  </div>
+                  <div class="date-info-item">
+                    <span class="label">Номер документа</span>
+                    <p class="data-text-info">72831923</p>
+                  </div>
+                </div>
+                <div class="date-info-item border-item">
+                  <span class="label">Адрес</span>
+                  <p class="data-text-info">
+                    РК, г. Алматы, ул. Богенбай батыра 150, офис 72
+                  </p>
+                </div>
+                <div class="triple-input border-item">
+                  <div class="date-info-item">
+                    <span class="label">Дата рождения</span>
+                    <p class="data-text-info">15 апреля 1999</p>
+                  </div>
+                  <div class="date-info-item">
+                    <span class="label">Телефон</span>
+                    <p class="data-text-info">+7 (700) 123 32 54</p>
+                  </div>
+                  <div class="date-info-item">
+                    <span class="label">Email </span>
+                    <p class="data-text-info">sagikani@ya.ru</p>
+                  </div>
+                </div>
+                <div class="date-info-item border-item">
+                  <span class="label">Программа</span>
+                  <p class="data-text-info">Куаныш 30%-49%</p>
+                </div>
+                <div class="date-info-item border-item">
+                  <span class="label">Пароль</span>
+                  <p class="data-text-info">Сменить пароль</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- @import "footer.html" -->
+
+    <script src="js/jq/jquery.js"></script>
+    <script src="js/tabs-script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+      $(function () {
+        $("#phone").mask("+7(999) 999-9999");
+      });
+    </script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/main-alpha.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
