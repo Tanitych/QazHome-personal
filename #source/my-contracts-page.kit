@@ -15,6 +15,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/main-alpha.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body style="background-color: #e5e5e5" id="srollTop">
@@ -39,127 +42,116 @@
       <img src="img/scroll-top-icon.svg" alt="" />
     </a>
     <main>
-      <div class="left-block">
-        <div class="logo-burger">
-          <a href="" class="sidebar-logo"><img src="img/logo.svg" alt="" /> </a>
-        </div>
-        <aside class="left-sidebar">
-          <div class="sidebar-nav">
-            <p class="small-cap">Личный кабинет</p>
-            <div class="profile-img-text">
-              <img class="profile-img" src="img/avatar.jpg" alt="" />
-              <div class="profile-text">
-                <p class="name">Алибек Маратов</p>
-                <p class="id">ID928312934</p>
-              </div>
-            </div>
-            <div class="label">
-              <img
-                class="label-img"
-                src="img/user-profile-checkmark.svg"
-                alt=""
-              />
-              <p class="label-name">Пайщик</p>
-            </div>
-            <div class="scroll-level">
-              <div class="scroll-level-text">
-                <img src="img/home-task-list.svg" alt="" />
-                <p class="queue">В очереди</p>
-                <p class="amount">
-                  <img class="elipse-icon" src="img/Ellipse 1.svg" alt="" />61
-                </p>
-              </div>
-              <div class="scroll-level-item">
-                <div class="scroll-level-line" style="width: 50%"></div>
-              </div>
-            </div>
-            <ul class="navigation-bar">
-              <li>
-                <a href="" class="navigation-link">
-                  <img
-                    class="navigation-img"
-                    src="img/icons/analytics.svg"
-                    alt=""
-                  />
-                  Программа</a
-                >
-              </li>
-              <li>
-                <a href="" class="navigation-link"
-                  ><img
-                    class="navigation-img"
-                    src="img/icons/users.svg"
-                    alt=""
-                  />
-                  Очередь</a
-                >
-              </li>
-              <li>
-                <a href="" class="navigation-link"
-                  ><img
-                    class="navigation-img"
-                    src="img/icons/notification.svg"
-                    alt=""
-                  />
-                  Уведомления
-                  <p class="noty">3</p>
-                </a>
-              </li>
-              <li>
-                <a href="form-registration.html" class="navigation-link"
-                  ><img
-                    class="navigation-img"
-                    src="img/icons/logout.svg"
-                    alt=""
-                  />
-                  Выйти</a
-                >
-              </li>
-            </ul>
-          </div>
-        </aside>
-      </div>
+      <!-- @import "left-menu.html" -->
       <div class="main-wrapper">
         <div class="content-wrapper">
           <!-- @import "header.html" -->
-          <div class="cards-wrapper">
-            <div class="cards-content">
-              <a href="my-datas-page.html" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/profile.svg" alt="" />
+          <div class="my-datas my-contracts">
+            <div class="form-head">
+              <h3 class="my-datas-title">Мои договоры</h3>
+              <form action="" class="search-item">
+                <input type="text" class="search-input" />
+                <div class="x-burger search-btn">
+                  <img src="img/icons/search.svg" alt="" />
                 </div>
-                <p class="cards-text">Мои данные</p>
-              </a>
-              <a href="" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/files-17.svg" alt="" />
+              </form>
+            </div>
+            <div class="my-contracts-body">
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/files-14.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.pdf</p>
+                  <span class="hover-text">(10mb)</span>
                 </div>
-                <p class="cards-text">Мои договора</p>
-              </a>
-              <a href="my-invited-persons-page.html" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/users.svg" alt="" />
+                <a target="_blank" href="" class="view-link">
+                  <img src="img/icons/eye-contracts.svg" alt="" />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/documents-file-word.2.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.docx</p>
+                  <span class="hover-text">(223kb)</span>
                 </div>
-                <p class="cards-text">Мои приглашённые</p>
-              </a>
-              <a href="" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/sales.svg" alt="" />
+                <a href="" class="load-link">
+                  <img class="load-icon" src="img/icons/download.svg" alt="" />
+                  <img
+                    src="img/icons/download-hover.svg"
+                    alt=""
+                    class="load-icon hovered"
+                  />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/documents-file-word.2green.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.docx</p>
+                  <span class="hover-text">(223kb)</span>
                 </div>
-                <p class="cards-text">Мои бонусы</p>
-              </a>
-              <a href="" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/analytics.svg" alt="" />
+                <a href="" class="load-link">
+                  <img class="load-icon" src="img/icons/download.svg" alt="" />
+                  <img
+                    src="img/icons/download-hover.svg"
+                    alt=""
+                    class="load-icon hovered"
+                  />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/files-14.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.pdf</p>
+                  <span class="hover-text">(10mb)</span>
                 </div>
-                <p class="cards-text">График платежей</p>
-              </a>
-              <a href="" class="cards-item">
-                <div class="cards-img">
-                  <img src="img/account-cards/dollar.svg" alt="" />
+                <a target="_blank" href="" class="view-link">
+                  <img src="img/icons/eye-contracts.svg" alt="" />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/documents-file-word.2.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.docx</p>
+                  <span class="hover-text">(223kb)</span>
                 </div>
-                <p class="cards-text">Мои инвестиции</p>
-              </a>
+                <a href="" class="load-link">
+                  <img class="load-icon" src="img/icons/download.svg" alt="" />
+                  <img
+                    src="img/icons/download-hover.svg"
+                    alt=""
+                    class="load-icon hovered"
+                  />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/documents-file-word.2.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.docx</p>
+                  <span class="hover-text">(223kb)</span>
+                </div>
+                <a href="" class="load-link">
+                  <img class="load-icon" src="img/icons/download.svg" alt="" />
+                  <img
+                    src="img/icons/download-hover.svg"
+                    alt=""
+                    class="load-icon hovered"
+                  />
+                </a>
+              </div>
+              <div class="my-contracts-item">
+                <div class="item-left">
+                  <img src="img/icons/documents-file-word.2.svg" alt="" />
+                  <p class="hover-text">Программа_Максат.docx</p>
+                  <span class="hover-text">(223kb)</span>
+                </div>
+                <a href="" class="load-link">
+                  <img class="load-icon" src="img/icons/download.svg" alt="" />
+                  <img
+                    src="img/icons/download-hover.svg"
+                    alt=""
+                    class="load-icon hovered"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -172,6 +164,15 @@
     <script src="js/tabs-script.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script>
+      $(function () {
+        $("#phone").mask("+7(999) 999-9999");
+      });
+    </script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/jquery.timepicker.js"></script>
+    <script src="js/main-alpha.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
