@@ -2655,3 +2655,264 @@ input[type="number"] {
     }
   }
 }
+
+.program-info {
+  padding: 30px 30px 30px 30px;
+  background-color: var(--white);
+  border-radius: 12px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05), 0px 5px 10px rgba(0, 0, 0, 0.05);
+  margin: 0px 0px 20px 0px;
+  @media (max-width: 991px) {
+    padding: 15px 15px;
+  }
+}
+
+.program-info-item {
+  .program-info-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 20px 0px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      margin: 0px 10px 0px 0px;
+      @media (max-width: 768px) {
+        margin: 0px 0px 5px 0px;
+      }
+      .name {
+        font-family: "Philosopher", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: -0.3px;
+        margin: 0px 10px 0px 0px;
+        @media (max-width: 991px) {
+          font-size: 30px;
+        }
+      }
+      .percent {
+        color: var(--orange);
+        padding: 6px 12px;
+        border-radius: 8px;
+        border: 1px solid var(--orange);
+      }
+    }
+    .right {
+      .price {
+        font-family: "Philosopher", sans-serif;
+        color: var(--sea-blue);
+        text-shadow: 0px 10px 8px rgba(0, 130, 149, 0.2);
+        letter-spacing: -0.3px;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 100%;
+        white-space: nowrap;
+        @media (max-width: 991px) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .program-info-tip {
+    margin: 0px 0px 28px 0px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border: 1px dashed rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    @media (max-width: 991px) {
+      padding: 7px 10px;
+    }
+    .text {
+      color: var(--black);
+      font-size: 18px;
+      line-height: 100%;
+    }
+    img {
+      max-width: 30px;
+      max-height: 30px;
+      min-width: 30px;
+      min-height: 30px;
+      margin: 0px 14px 0px 0px;
+      @media (max-width: 991px) {
+        margin: 0px 9px 0px 0px;
+      }
+    }
+  }
+  .program-info-body {
+    .up {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .entered {
+        color: var(--dark-green);
+
+        .text {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 100%;
+          margin: 0px 0px 8px 0px;
+          @media (max-width: 991px) {
+            font-size: 15px;
+            margin: 0px 0px 5px 0px;
+          }
+        }
+        .sum {
+          font-family: "Philosopher", sans-serif;
+          font-weight: bold;
+          font-size: 34px;
+          line-height: 100%;
+          letter-spacing: -0.3px;
+          @media (max-width: 991px) {
+            font-size: 21px;
+          }
+        }
+        &.past {
+          color: #888888;
+          text-align: right;
+        }
+      }
+    }
+    .progress {
+      width: 100%;
+      height: 2px;
+      background-color: #c0c0c0;
+      position: relative;
+      margin: 11px 0px 14px 0px;
+      .progress-item {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        background-color: var(--dark-green);
+        box-shadow: 0px 8px 16px rgba(12, 157, 79, 0.25);
+        border-radius: 2px;
+        &::after {
+          content: url(../img/icons/progress-ellipse.svg);
+          position: absolute;
+          right: -1px;
+          bottom: -9px;
+        }
+      }
+    }
+
+    .percent-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0px 0px 30px 0px;
+      color: var(--dark-green);
+      font-size: 18px;
+      line-height: 100%;
+      .num {
+      }
+      .num-grey {
+        color: #888888;
+      }
+    }
+  }
+  .program-info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        padding: 8px 8px;
+        margin: 0px 10px 0px 0px;
+        border: 1px dashed rgba(12, 157, 79, 0.3);
+        border-radius: 8px;
+      }
+      .text-block {
+        .text {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 100%;
+          color: #888888;
+          margin: 0px 0px 6px 0px;
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
+        }
+        .num {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: -0.3px;
+          color: var(--black);
+          @media (max-width: 768px) {
+            font-size: 17px;
+          }
+          span {
+            color: #888888;
+            margin: 0px 0px 0px 5px;
+          }
+        }
+      }
+    }
+    .right {
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      .log-in-link {
+        max-width: 256px;
+        @media (max-width: 768px) {
+          max-width: unset;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.program-info-footer.choose {
+  justify-content: unset;
+  @media (max-width: 991px) {
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left {
+    .text {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 100%;
+      color: var(--black);
+      max-width: 105px;
+      margin: 0px 30px 0px 0px;
+    }
+    @media (max-width: 991px) {
+      margin: 0px 0px 10px 0px;
+      .text {
+        max-width: unset;
+      }
+    }
+  }
+  .right.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    .log-in-link {
+      margin: 0px 0px 0px 0px;
+      @media (max-width: 991px) {
+        max-width: unset;
+      }
+    }
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+}
