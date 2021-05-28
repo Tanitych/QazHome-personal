@@ -42,13 +42,65 @@
 </header>
 
     <div id="form-modal" class="modal-block">
-      <form class="modal-form" action="">
+      <!-- <form class="modal-form" action="">
         <div class="modal-form-head">
           <h4 class="modal-form-title">Подтверждение перед оплатой</h4>
           <div class="modal-close">
             <img src="img/x-burger.svg" alt="" />
           </div>
         </div>
+      </form> -->
+      <form
+        class="modal-form"
+        action="\pay-initial"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="hidden"
+          name="user_program_id"
+          value="{{ $user_program_id }}"
+        />
+        <div class="modal-form-head">
+          <h4 class="modal-form-title">Реквизиты для оплаты</h4>
+          <div id="modal-close3" class="modal-close">X</div>
+        </div>
+        <div class="modal-form-body">
+          <div class="form-text-column">
+            <p class="text" id="program_summ_text">
+              Для перехода на программу asd вам необходимо пополнить счет на
+              <span>2 000 000₸ (20%)</span>
+            </p>
+            <p class="text">
+              Товарищество с ограниченной ответственностью «EduCenter»
+            </p>
+            <p class="text">
+              Адрес: 050012, г.Алматы, Алмалинский район, ул. Богенбай батыра,
+              150, Бизнес центр «Кадам Инвест», 4-этаж.
+            </p>
+            <p class="text">
+              БИН 210140021891
+              <br />
+              АО «Forte Bank»
+              <br />
+              БИК IRTYKZKA
+              <br />
+              ИИК KZ2096502F0013012134
+            </p>
+          </div>
+        </div>
+        <label
+          class="file-upload-label"
+          for="file-upload"
+          id="file-upload-label"
+        >
+          <input type="file" id="file-upload" name="file" />
+          <p class="upload-text">Загрузить чек</p>
+        </label>
+        <div class="send-noty" id="invoice_suc_upld_btn" style="display: none">
+          Чек успешно загружен
+        </div>
+        <button id="initial_file_send" class="form_btn send">Отправить</button>
       </form>
     </div>
     <a

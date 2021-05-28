@@ -51,9 +51,9 @@ function scrollFunction() {
 
 //modal
 
-var modal = document.getElementById("form-modal");
+var modal = document.getElementsByClassName("modal-block")[0];
 var modalBtn = document.getElementById("modal-btn");
-var closeBtn = document.getElementsByClassName("modal-close")[0];
+var closeBtn = document.getElementById("modal-close3");
 
 modalBtn.onclick = function () {
     modal.style.display = "block";
